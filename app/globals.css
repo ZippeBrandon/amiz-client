@@ -409,5 +409,5 @@ border: solid 2px #0F1F2C;
 }
 
 .postCard > img {
-    @apply w-full;
+    @apply w-full
 }
