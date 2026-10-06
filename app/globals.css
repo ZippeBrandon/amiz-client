@@ -1,0 +1,413 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faustina:ital,wght@0,300..800;1,300..800&display=swap');
+
+.root,
+#root,
+#docs-root {
+    --darkPurple: #9747FF;
+    --dark: #273541;
+    --green: #78DCA6;
+    --lightPurple: #A7A3DE;
+    --darkGreen: #60B085;
+    --black: #0F1F2C;
+    --peach: #FDA388;
+    --primary-purple: #645dc7;
+}
+
+.button-nav {
+    @apply rounded-full font-bold shadow-xl px-10 py-5;
+}
+.buttonGreen {
+    @apply bg-green hover:bg-darkGreen text-black;
+}
+
+.buttonLight {
+    @apply bg-light hover:bg-grey text-black border-2 border-black;
+}
+
+.button-shadow {
+    @apply px-16 py-5 rounded-full block;
+    box-shadow: 2px 3px 3px #0F1F2C;
+    max-width: 250px;
+}
+
+.markdown-h1 p {
+    @apply font-light text-4xl md:text-8xl leading-snug z-10 relative;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.contact-h1 p {
+    @apply font-light text-4xl md:text-7xl leading-snug z-10 relative text-left mb-10;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.whoWeHelp {
+    @apply font-light text-3xl md:text-5xl leading-snug z-10 relative text-center mb-14 mt-14;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.markdown-h1 p b,
+.chooseUs h1 b,
+.contact-h1 b,
+.whatWeDo-h1 b,
+.whatWeDo-h1-body b,
+.whatWeDoForm b,
+.whoWeHelp-h1 b,
+.whoWeHelp b,
+.whoWeAre-h1 b {
+    @apply font-bold relative z-10;
+}
+
+.teamName {
+    @apply text-xl text-primary-purple text-center mt-5;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.intro .markdown-h1 p:nth-child(1) b:before {
+    @apply absolute -bottom-2 right-0 hidden md:block z-0;
+    content: url(/images/header-underline.png);
+}
+
+.contactPage .contact-h1 p:first-of-type b:before {
+    @apply absolute -bottom-2 right-64 hidden md:block z-0;
+    content: url(/images/header-underline.png);
+}
+
+.intro .markdown-h1 p:nth-child(2) b:before {
+    @apply absolute -bottom-5 md:bottom-0 -right-14 hidden md:block;
+    content: url(/images/header-arrow.png);
+}
+
+.services h1 b {
+    @apply inline-block w-fit relative;
+}
+
+.services h1 b:before {
+    @apply absolute -bottom-4 right-0 hidden md:block z-0;
+    content: url(/images/header-circle.png);
+}
+
+.whoWeHelp-h1 b:nth-child(1):before {
+    @apply absolute top-4 left-0 right-0 w-full hidden md:block z-0;
+    content: url(/images/header-circle.png);
+}
+
+.whoWeHelp-h1 b:nth-child(2):before {
+    @apply absolute -top-6 -right-6 hidden md:block z-0;
+    content: url(/images/header-stars-light.png);
+}
+
+.chooseUs h1 b:nth-child(1):before {
+    @apply absolute -bottom-2 right-0 hidden md:block z-0;
+    content: url(/images/header-underline.png);
+}
+
+.whatWeDo-h1 b:nth-child(1):before {
+    @apply absolute -bottom-2 right-0 hidden md:block z-0;
+    content: url(/images/header-underline.png);
+}
+
+.whoWeAre-h1 b:nth-child(1):before {
+    @apply absolute -bottom-4 right-0 hidden md:block z-0;
+    content: url(/images/header-underline-short.png);
+}
+
+.whoWeAre-h1 b:nth-child(1):after {
+    @apply absolute -top-4 -right-10 hidden md:block z-0;
+    content: url(/images/header-stars.png);
+}
+
+.whatWeDo-h1-body b:nth-child(1):before {
+    @apply absolute -top-4 -right-8 hidden md:block z-0;
+    content: url(/images/header-stars.png);
+}
+
+.whatWeDo-h1 b:nth-child(2):before {
+    @apply absolute top-14 right-10 hidden md:block z-0;
+    content: url(/images/header-arch-arrow.png);
+}
+
+.chooseUs h1 b:nth-child(2):after {
+    @apply absolute -top-4 -right-8 hidden md:block z-0;
+    content: url(/images/header-stars.png);
+}
+
+.contactPage h1 p:after {
+    @apply absolute bottom-0 left-60 hidden md:block z-0;
+    content: url(/images/header-stars.png);
+}
+
+.contact h1 b:before {
+    @apply absolute -top-8 right-28 hidden md:block z-0;
+    content: url(/images/header-stars-light.png);
+}
+
+.whatWeDoForm b:before {
+    @apply absolute bottom-0 -right-8 hidden md:block z-0;
+    content: url(/images/header-stars-light.png);
+}
+
+.services h1,
+.chooseUs h1,
+.whoWeAre h1,
+.contact h1,
+.contactPage h1,
+.contactHeader,
+.whatWeDo-h1,
+.whatWeDo-h1-body,
+.bodyBoldTitle {
+    @apply text-4xl md:text-6xl leading-snug z-10 relative;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.caseStudy h1 {
+    @apply leading-snug relative max-w-3xl mx-auto text-5xl md:text-7xl;
+        font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.csTitle {
+    @apply leading-snug relative text-3xl md:text-5xl;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.csContent {
+    @apply font-bold mt-10;
+}
+
+.contact h1 {
+    @apply block max-w-xl;
+}
+
+.whatWeDo-h1 {
+    @apply text-left text-7xl w-11/12;
+}
+
+.whoWeHelp-h1 {
+    @apply max-w-3xl mx-auto w-full text-5xl md:text-7xl mt-10;
+    line-height: 1.15;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.whoWeAre-h1 {
+    @apply max-w-3xl mx-auto w-full text-5xl md:text-7xl mt-10 text-left;
+    line-height: 1.15;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.services p,
+.chooseUs p,
+.whoWeAre p,
+.contactSubHeader,
+.bodySubTitle {
+    @apply text-xl md:text-2xl font-light uppercase md:mb-5;
+    font-weight: 400;
+}
+
+.markdown-copy {
+    @apply text-sm md:text-xl font-semibold;
+}
+
+.markdown-copy p {
+    @apply mb-5;
+}
+
+.contact p {
+    @apply max-w-md text-sm md:text-xl mt-10;
+}
+
+.header-underline {
+    @apply absolute right-16 md:right-32 top-10 w-1/4;
+}
+
+.serviceBlock,
+.serviceBodyBlock {
+    @apply flex flex-col justify-start items-start content-center text-left border-2 border-black rounded-lg pt-10 pr-10 pl-10 w-full md:max-w-xs mt-5 md:mt-0;
+    box-shadow: 3px 3px 2px #0F1F2C;
+}
+
+.serviceBodyBlock {
+    @apply w-full;
+}
+
+@screen md {
+    .serviceBodyBlock {
+        @apply m-5;
+        max-width: calc(48% - 17px);
+    }
+}
+
+.serviceBlock img {
+    max-height: 170px;
+}
+
+.block0,
+.serviceBodyBlock.block0,
+.serviceBodyBlock.block3 {
+    background: #d9d9d9;
+}
+
+.block1,
+.serviceBodyBlock.block2{
+    @apply bg-purple-shade-1;
+}
+
+.block2,
+.serviceBodyBlock.block1 {
+    @apply bg-purple-shade-2;
+}
+
+.serviceBodyBlock.block2 {
+    @apply bg-primary-purple text-white;
+}
+
+.serviceBodyBlock.block4 {
+    @apply bg-purple-shade-2 mb-10;
+}
+
+@screen md {
+    .serviceBodyBlock.block4 {
+        @apply w-full flex flex-col md:flex-row max-w-6xl;
+    }
+}
+
+
+.container {
+    @apply p-10 pt-20 mx-2 rounded-3xl w-full;
+}
+
+.testimonialBlock {
+    @apply border-2 border-black rounded-3xl bg-grey p-10 flex flex-col w-full md:w-1/3 m-2;
+    box-shadow: 2px 3px 3px #0F1F2C;
+    /* height: 600px; */
+
+}
+
+.logoSlide {
+    max-width: 150px;
+}
+
+.formWrap {
+    @apply flex flex-col md:flex-row justify-between w-full;
+}
+
+.contactPageForm {
+    @apply w-full md:w-1/2 md:pl-20;
+}
+
+.contactPageForm .formWrap {
+    @apply md:flex-col;
+}
+.formfooter {
+    border-top: solid 8px var(--darkPurple);
+}
+
+.formfooter input, .formfooter textarea {
+@apply w-full bg-gray-100 rounded-lg p-3 my-2 md:my-5;
+box-shadow: 3px 3px 2px #0F1F2C;
+border: solid 2px #0F1F2C;
+}
+
+.formfooter label {
+@apply hidden;
+}
+
+.formGroup {
+@apply flex flex-col justify-start p-1 w-full md:w-1/2;
+}
+
+.contactPageForm input {
+    @apply !w-full;
+}
+
+.contactPageForm .formGroup {
+    @apply !w-full;
+}
+
+.policy {
+@apply bg-purple-shade-1 p-10 pt-10 md:pt-20 mx-2 rounded-3xl;
+}
+
+.policy h2 {
+    @apply uppercase text-lg mt-10;
+}
+
+.policy h1 {
+    @apply text-4xl font-bold mb-10;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+}
+
+.policy ul {
+    @apply list-disc ml-10;
+}
+
+.policy ul li {
+    @apply my-4;
+}
+
+@screen md {
+    .header-underline {
+        top: 90px;
+    }
+}
+
+.contentBlock {
+    @apply w-full flex flex-col justify-around px-5 md:px-0 py-12 rounded-3xl items-center content-center;
+}
+
+.cb-0,
+.cb-2,
+.cb-4 {
+    @apply md:flex-row bg-grey;
+}
+
+.cb-1,
+.cb-3,
+.cb-5 {
+    @apply md:flex-row-reverse;
+}
+
+.checklistTitle {
+    @apply font-bold text-3xl leading-snug z-10 relative text-left mb-2 mt-5 md:mt-0;
+}
+
+.cb-checklist ul li {
+    @apply flex flex-row items-center content-center mb-2 max-w-xl;
+}
+
+.cb-checklist ul li:before {
+    @apply mr-5;
+    content: url(/images/checkmark.png);
+}
+
+.post-content-wrap {
+    @apply flex flex-col md:flex-row justify-between items-center content-center my-20 max-w-6xl mx-auto p-5 space-x-0 md:space-x-60;
+}
+.post-content-wrap h2 {
+    @apply text-2xl md:text-3xl font-bold leading-snug mb-5;
+}
+
+.post-content-wrap img {
+    @apply w-1/3 mx-auto;
+    max-width: 300px;
+}
+.postCard {
+    @apply w-full md:w-1/3 mx-2 rounded-xl overflow-hidden;
+    box-shadow: 3px 3px 2px #0F1F2C;
+    border: solid 1px #0F1F2C;  
+}
+
+.postCard > img {
+    @apply w-full;
+}
