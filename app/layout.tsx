@@ -52,10 +52,7 @@ function Footer() {
       </div>
       <div className="border-t-2 border-light pt-8 flex flex-col md:flex-row justify-between items-center content-center">
         <div className="flex flex-row justify-between space-x-5 mb-5 md:mb-5">
-          <Link href="https://www.instagram.com/amzwithamiz/" target="_blank">
-            <GrInstagram className="text-light text-3xl hover:text-purple-shade-1"/>
-          </Link>
-          <Link href="https://www.linkedin.com/company/amiz-consulting/" target="_blank">
+          <Link href="https://www.linkedin.com/company/amz-with-amiz" target="_blank">
             <GrLinkedin className="text-light text-3xl hover:text-purple-shade-1"/>
           </Link>
         </div>
